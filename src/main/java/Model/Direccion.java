@@ -6,16 +6,16 @@ import jakarta.persistence.Embeddable;
 @Embeddable
 public class Direccion {
 
-    @Column
+    @Column(insertable = false, updatable = false)
     private String direccion;
 
-    @Column
+    @Column(insertable = false, updatable = false)
     private String ciudad;
 
-    @Column
+    @Column(insertable = false, updatable = false)
     private String provincia;
 
-    @Column
+    @Column(insertable = false, updatable = false)
     private int codigoPostal;
 
     public String getDireccion() {
